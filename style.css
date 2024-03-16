@@ -1,0 +1,171 @@
+.main{
+  border: 3px solid black;
+  height: 500px;
+  margin-top: 100px;
+  background-image: linear-gradient(#aaffb7, #5151ff);
+}
+
+
+.face{
+  background: chartreuse;
+  height: 150px;
+  width: 150px;
+  border-radius: 50% 50% 0 0;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+.eyes{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+
+.leye,.reye{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: black;
+}
+
+
+.body1{
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+.larm{
+  height: 75px;
+  width: 15px;
+  background: chartreuse;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+
+.center{
+  height: 150px;
+  width: 150px;
+  background: chartreuse;
+  border-radius: 0 0 40% 40%;
+}
+
+
+.rarm{
+  height: 75px;
+  width: 15px;
+  background: chartreuse;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+
+.legs{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin: auto;
+  margin-top: -20px;  
+}
+
+
+.lleg{
+  height: 75px;
+  width: 15px;
+  background: chartreuse;
+  border-radius: 50px;
+}
+
+
+.rleg{
+  height: 75px;
+  width: 15px;
+  background: chartreuse;
+  border-radius: 50px;
+}
+.main:hover .face{
+  animation-name:moveface;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+}
+
+.main:hover .larm{
+  animation-name:rotateHand;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
+.main:hover .rarm{
+  animation-name:rotateHand;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveface 
+
+{
+  50%{
+      transform:translateX(30px)
+  }
+  
+  
+}
+.main:hover .center{
+  height: 180px;
+  width: 170px;
+  box-shadow: 3px 5px 4px white;
+  border-radius: 50% 50% 50% 50%;
+  animation-name:rotateBody;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+  
+}
+.main:hover .lleg{
+  animation-name:rotateleg;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+
+}
+.main:hover .rleg{
+  animation-name:rotateleg2;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes rotateBody{
+100%{
+  transform:rotate(360deg)
+}
+}
+@keyframes rotateHand{
+  100%{
+      transform:rotate(15deg);
+
+
+  }
+  }
+  @keyframes rotateHand2
+  {
+      100%{
+          transform:rotate(-15deg)
+      }
+      }
+      @keyframes rotateleg
+      {
+          100%{
+              transform:rotate(13deg);
+
+              
+          }
+      }
+          @keyframes rotateleg2{
+              100%{
+                  transform:rotate(-13deg)
+              }
+              }
